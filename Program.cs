@@ -27,9 +27,12 @@
 Console.Clear();
 Console.Write("Введите число ");
 int n = Convert.ToInt32(Console.ReadLine());
+if (n < 0)
+{
+    n*=-1;
+}
 int negativeN = -n;
 int i = 1;
-Console.WriteLine(n + i);
 while (negativeN <= n)
 {
     Console.Write(negativeN + "\t" );
